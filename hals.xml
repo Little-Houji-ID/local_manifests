@@ -4,40 +4,6 @@
            fetch="https://github.com/Little-Houji-ID"
            revision="lineage-22.2" />
 
-  <!-- Hardware -->
-  <remove-project path="hardware/qcom-caf/common" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="Little-Houji-ID" >
-    <!-- add guard for AOSP hardware/qcom dir -->
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-    <!-- add guards for CAF repositories -->
-    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
-  </project>
-
   <remove-project path="hardware/qcom-caf/sm8650/audio/agm" />
   <project path="hardware/qcom-caf/sm8650/audio/agm" name="hardware_qcom-caf-sm8650-audio-agm" groups="qcom,lanai-audio" revision="lineage-22.2" remote="Little-Houji-ID" />
 
@@ -50,7 +16,6 @@
   <remove-project path="hardware/qcom-caf/sm8650/display" />
   <project path="hardware/qcom-caf/sm8650/display" name="hardware_qcom-caf-sm8650-display" groups="qcom" revision="lineage-22.2" remote="Little-Houji-ID" />
 
-  <remove-project path="hardware/qcom-caf/sm8650/media" />
   <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom-caf-sm8650-media" groups="qcom" revision="lineage-22.2" remote="Little-Houji-ID" />
 
   <remove-project path="hardware/qcom-caf/sm8650/dataipa" />
